@@ -24,5 +24,6 @@ public class dayFinder {
             default:System.out.println("One Week Only Contain 7 Days.");
                 break;
         }
+        input.close();
     }
 }

@@ -11,5 +11,6 @@ public class posAndNeg {
         }else{
             System.out.println("It is negative");
         }
+        input.close();
     }
 }
