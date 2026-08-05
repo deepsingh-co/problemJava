@@ -1,4 +1,5 @@
- public class Solution {
+public class Solution {
+
     public boolean exist(char[][] board, String word) {
         int m = board.length;
         int n = board[0].length;
@@ -15,30 +16,40 @@
     }
 
     private boolean dfs(char[][] board, String word, int row, int col, int index) {
-        // All characters matched
         if (index == word.length()) {
             return true;
         }
 
-        // Out of bounds or character doesn't match
         if (row < 0 || col < 0 || row >= board.length || col >= board[0].length
                 || board[row][col] != word.charAt(index)) {
             return false;
         }
 
-        // Mark as visited
         char temp = board[row][col];
         board[row][col] = '#';
 
-        // Explore four directions
-        boolean found = dfs(board, word, row + 1, col, index + 1) ||
-                        dfs(board, word, row - 1, col, index + 1) ||
-                        dfs(board, word, row, col + 1, index + 1) ||
-                        dfs(board, word, row, col - 1, index + 1);
+        boolean found = dfs(board, word, row + 1, col, index + 1)
+                || dfs(board, word, row - 1, col, index + 1)
+                || dfs(board, word, row, col + 1, index + 1)
+                || dfs(board, word, row, col - 1, index + 1);
 
-        // Backtrack
         board[row][col] = temp;
 
         return found;
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+
+        char[][] board = {
+            {'A','B','C','E'},
+            {'S','F','C','S'},
+            {'A','D','E','E'}
+        };
+
+        String word = "ABCCED";
+
+        boolean result = sol.exist(board, word);
+        System.out.println(result);
     }
 }
