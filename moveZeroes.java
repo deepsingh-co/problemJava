@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class moveZeroes {
 
-    public static void moveZeroes(int[] nums) {
+    public static void moveZero(int[] nums) {
         int j = 0;
 
         for (int i = 0; i < nums.length; i++) {
@@ -18,7 +18,7 @@ public class moveZeroes {
     public static void main(String[] args) {
         int[] nums = {0, 1, 0, 3, 12};
 
-        moveZeroes(nums);
+        moveZero(nums);
 
         System.out.println(Arrays.toString(nums));
     }
