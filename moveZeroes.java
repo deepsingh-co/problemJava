@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class moveZeroes {
 
     public static void moveZeroes(int[] nums) {
         int j = 0;
