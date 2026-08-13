@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class nqueen {
 
     static int count = 0;
 
