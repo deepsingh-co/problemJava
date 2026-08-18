@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class woedLadder {
+public class wordLadder {
 
     public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
 
