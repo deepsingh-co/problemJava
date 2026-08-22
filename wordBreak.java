@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class WordBreak {
+public class wordBreak {
 
     public static boolean wordBreak(String s, List<String> wordDict) {
 
