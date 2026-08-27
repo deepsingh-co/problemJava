@@ -19,8 +19,8 @@ public class uniqePath {
     }
 
     public static void main(String[] args) {
-        int m = 3;
-        int n = 7;
+        int m = 10;
+        int n = 5;
 
         int result = uniquePaths(m, n);
 
