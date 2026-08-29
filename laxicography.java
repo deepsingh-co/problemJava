@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class laxicography {
 
     public static int[] lexicographicallySmallestArray(int[] nums, int limit) {
         int n = nums.length;
