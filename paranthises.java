@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class paranthises {
 
     public static List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
