@@ -46,7 +46,7 @@ public class paranthises {
 
     public static void main(String[] args) {
 
-        int n = 3;
+        int n = 5;
 
         List<String> result = generateParenthesis(n);
 
