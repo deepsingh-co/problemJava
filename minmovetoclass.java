@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class minmovetoclass {
 
     static class State {
         int r, c;
