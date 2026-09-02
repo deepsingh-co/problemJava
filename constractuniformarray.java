@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class constractuniformarray {
 
     public static boolean uniformArray(int[] nums1) {
         int n = nums1.length;
