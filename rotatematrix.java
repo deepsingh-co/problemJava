@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class RotateMatrix {
+public class rotatematrix {
 
     public static void rotate(int[][] matrix) {
         int n = matrix.length;
